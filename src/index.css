@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 antialiased overflow-hidden;
+  }
+}
+
+.game-container {
+  @apply relative w-full h-screen overflow-hidden flex flex-col items-center justify-center;
+}
+
+.battle-bg {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat;
+  background-image: url('https://res.cloudinary.com/dkyzhwy4w/image/upload/v1760088968/background_me6s3b.jpg');
+}
+
+.glass-panel {
+  @apply bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl;
+}
